@@ -1,6 +1,8 @@
 body {
     font-family: sans-serif;
     background-color: black;
+    margin: 0;
+    padding: 0;
 }
 
 .wd-fill {
@@ -19,11 +21,16 @@ body {
     flex-direction: row;
 }
 
+.space-above {
+    margin-top: 16px;
+}
+
 .wd-empty-ul {
     display: flex;
     list-style-type: none;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 0;
+    margin: 0;
 }
 
 .wd-align-end {
@@ -50,11 +57,11 @@ p {
 }
 
 .wd-accent-color {
-    color: #4EA0EB;
+    color: rgb(29,161,242);
 }
 
 .wd-background {
-    color: black
+    margin: 0px 16px 0px 16px
 }
 
 .wd-tertiary {
@@ -62,7 +69,7 @@ p {
 }
 
 .wd-secondary {
-    color: dimgray;
+    color: rgb(110, 118, 125);
 }
 
 .wd-primary {
@@ -123,6 +130,10 @@ input:focus {
     font-size: 12px;
 }
 
+#tags {
+    font-size: 15px;
+}
+
 #search-label {
     font-size: 12px;
     margin-left: 8px;
@@ -150,6 +161,7 @@ input:focus {
 .wd-blank-link {
     text-display: none;
     text-decoration: none;
+    margin-right: 8px;
 }
 
 a:visited {
@@ -158,9 +170,20 @@ a:visited {
 
 .wd-post-image {
     margin-left: 12px;
-    width: 84px;
-    height: 84px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     border-radius: 12px;
     aspect-ratio: 1/1;
+}
+
+.border {
+    border-radius: 1px;
+    border-color: dimgray;
+    border-style: solid;
+    padding: 16px;
+}
+
+.wd-subtitle {
+    font-size: 13px;
 }
