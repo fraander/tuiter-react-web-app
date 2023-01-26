@@ -1,0 +1,166 @@
+body {
+    font-family: sans-serif;
+    background-color: black;
+}
+
+.wd-fill {
+    flex-grow: 1;
+}
+
+.wd-push-to-end {
+    align-self: flex-end;
+}
+
+.wd-flex-vertical {
+    flex-direction: column;
+}
+
+.wd-flex-horizontal {
+    flex-direction: row;
+}
+
+.wd-empty-ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.wd-align-end {
+    align-self: end;
+}
+
+p {
+    padding: 4px;
+    margin: 0;
+}
+
+.wd-row-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.wd-column-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.wd-accent-color {
+    color: #4EA0EB;
+}
+
+.wd-background {
+    color: black
+}
+
+.wd-tertiary {
+    color: darkgray;
+}
+
+.wd-secondary {
+    color: dimgray;
+}
+
+.wd-primary {
+    color: white;
+}
+
+.wd-secondary-background {
+    background-color: dimgray;
+}
+
+.wd-bold {
+    font-weight: bolder;
+}
+
+.underline {
+    background-color: rgb(29, 161, 242);
+    width: 100%;
+    height: 4px;
+    margin-top: 8px;
+    border-radius: 4px;
+    position: relative;
+}
+
+#search-field {
+    background: none;
+    border: none;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+}
+
+::placeholder {
+    color: darkgray;
+}
+
+#search-field:focus {
+    border: none;
+}
+
+.wd-capsule {
+    border-radius: 20px;
+}
+
+#gear {
+    margin-left: 32px;
+    padding: 6px;
+    height: 16px;
+    width: 16px;
+}
+
+#search {
+    padding: 6px;
+}
+
+#search-field {
+    font-size: 12px;
+}
+
+#search-label {
+    font-size: 12px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+#gear {
+    width: 16px;
+    height: 16px;
+}
+
+.wd-fill-accent {
+    fill: #4EA0EB;
+}
+
+.wd-fill-secondary {
+    fill: darkgray;
+}
+
+#search-icon {
+    width: 14px;
+    height: 14px;
+}
+
+.wd-blank-link {
+    text-display: none;
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+.wd-post-image {
+    margin-left: 12px;
+    width: 84px;
+    height: 84px;
+    object-fit: cover;
+    border-radius: 12px;
+    aspect-ratio: 1/1;
+}
