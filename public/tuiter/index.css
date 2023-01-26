@@ -1,0 +1,211 @@
+body {
+    font-family: sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.wd-fill {
+    flex-grow: 1;
+}
+
+.wd-push-to-end {
+    align-self: flex-end;
+}
+
+.wd-flex-vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.wd-flex-horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+.space-above {
+    margin-top: 16px;
+}
+
+.wd-empty-ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.wd-align-end {
+    align-self: end;
+}
+
+p {
+    padding: 4px;
+    margin: 0;
+}
+
+.wd-row-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.wd-column-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.wd-accent-color {
+    color: rgb(29,161,242);
+}
+
+.wd-background {
+    margin: 0px 16px 0px 16px
+}
+
+.wd-tertiary {
+    color: darkgray;
+}
+
+.wd-secondary {
+    color: rgb(110, 118, 125);
+}
+
+.wd-primary {
+    color: white;
+}
+
+.wd-secondary-background {
+    background-color: dimgray;
+}
+
+.wd-bold {
+    font-weight: bolder;
+}
+
+.underline {
+    background-color: rgb(29, 161, 242);
+    width: 100%;
+    height: 4px;
+    margin-top: 8px;
+    border-radius: 4px;
+    position: relative;
+}
+
+#search-field {
+    background: none;
+    border: none;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+}
+
+::placeholder {
+    color: darkgray;
+}
+
+#search-field:focus {
+    border: none;
+}
+
+.wd-capsule {
+    border-radius: 20px;
+}
+
+#gear {
+    margin-left: 32px;
+    padding: 6px;
+    height: 16px;
+    width: 16px;
+}
+
+#search {
+    padding: 6px;
+}
+
+#search-field {
+    font-size: 12px;
+}
+
+#tags {
+    font-size: 15px;
+}
+
+#search-label {
+    font-size: 12px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+#gear {
+    width: 16px;
+    height: 16px;
+}
+
+.wd-fill-accent {
+    fill: #4EA0EB;
+}
+
+.wd-fill-secondary {
+    fill: darkgray;
+}
+
+#search-icon {
+    width: 14px;
+    height: 14px;
+}
+
+.wd-blank-link {
+    text-display: none;
+    text-decoration: none;
+    margin-right: 8px;
+}
+
+a:visited {
+    color: inherit;
+}
+
+.wd-post-image {
+    margin-left: 12px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 12px;
+    aspect-ratio: 1/1;
+}
+
+.border {
+    border-radius: 1px;
+    border-color: dimgray;
+    border-style: solid;
+    padding: 16px;
+}
+
+.wd-subtitle {
+    font-size: 13px;
+}
+
+.wd-profile-image {
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+}
+
+.wd-large-image {
+    max-width: 504px;
+    max-height: 264px;
+}
+
+.wd-rounded {
+    border-radius: 16px;
+}
+
+.post-box {
+    max-width: 506px;
+    width: 506px;
+}
