@@ -84,14 +84,13 @@ body {
     font-weight: normal;
 }
 
-.wd-post > h3 {
-    font-size: 15px;
-    line-height: 0;
-    font-weight: bold;
+.page-wrapper {
+    min-width: 286px;
 }
 
 .wd-post > h3 {
-    line-height: 12px;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .wd-post > h5 > span {
