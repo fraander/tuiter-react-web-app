@@ -58,7 +58,7 @@ body {
 }
 
 
-.tab-header {
+.wd-tab-header {
     font-size: 15px;
     display: inline;
 }
@@ -84,7 +84,7 @@ body {
     font-weight: normal;
 }
 
-.page-wrapper {
+.wd-page-wrapper {
     min-width: 286px;
 }
 
