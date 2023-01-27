@@ -5,17 +5,19 @@ body {
     color: white;
 }
 
-#gear-svg {
 
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    line-height: 100%;
+}
+
+.wd-justify-space-between {
+    justify-content: space-between
 }
 
 .wd-display-flex {
     display: flex;
     align-items: center;
-}
-
-::placeholder {
-    color: darkgray;
 }
 
 .wd-fill-dark-gray {
@@ -26,20 +28,16 @@ body {
     height: 16px;
 }
 
+.wd-width-12px {
+    width: 12px;
+}
+
 .wd-width-16px {
     width: 16px;
 }
 
 .wd-fg-dark-gray {
     color: darkgray;
-}
-
-.wd-fg-dim-gray {
-    color: dimgray;
-}
-
-.wd-bg-dark-gray {
-    background-color: darkgray;
 }
 
 .wd-bg-dim-gray {
@@ -50,55 +48,34 @@ body {
     border-radius: 50vh;
 }
 
-#search-input {
-    background: none;
-    outline: none;
-    border: none;
-    color: white;
+
+
+
+h3, h4 {
+    margin: 12px 0;
 }
 
-
-.wd-tab-header {
-    font-size: 15px;
-    display: inline;
-}
-
-.wd-post > h3, h4, h5 {
-    margin: 16px 0;
-}
-
-#footer {
-    height: 16px;
-}
-
-.wd-post.wd-post-ef {
-    min-height: 100px
-}
-
-.wd-post > h4, h5 {
+h4, h5 {
     font-size: 13px;
     line-height: 0;
 }
 
-.wd-post > h4 {
+h4 {
     font-weight: normal;
 }
 
 .wd-page-wrapper {
     min-width: 286px;
+    height: 100vh;
 }
 
-.wd-post > h3 {
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.wd-post > h5 > span {
+h5 > span {
     font-weight: normal;
+    font-size: 13px;
     color: rgb(110, 118, 125);
 }
 
-.wd-post > h4 {
+h4 {
     color: rgb(110, 118, 125);
 }
 
@@ -115,12 +92,6 @@ body {
     justify-items: center;
 }
 
-a {
-    line-height: 0;
-    margin: 0;
-    padding: 0;
-}
-
 .wd-fill-accent {
     fill: rgb(29, 161, 242);
 }
@@ -129,12 +100,12 @@ a {
     color: rgb(29, 161, 242);
 }
 
-.wd-bg-accent {
-    background-color: rgb(29, 161, 242);
+.wd-fg-red {
+    color: #ff7070;
 }
 
-.wd-flex-horizontal {
-    flex-direction: row;
+.wd-bg-accent {
+    background-color: rgb(29, 161, 242);
 }
 
 .wd-flex-small {
@@ -145,29 +116,20 @@ a {
     flex-grow: 1;
 }
 
-.wd-margin-8px-left {
-    margin-left: 8px;
-}
-
-.wd-margin-8px-right {
-    margin-right: 8px;
-}
-
 .wd-margin-8px-bottom {
     margin-bottom: 8px;
 }
 
-#underline {
-    margin-bottom: 3px; height: 4px; border-radius:
-        100px;
+.wd-margin-12px-bottom {
+    margin-bottom: 12px;
 }
 
 .wd-margin-8px-top {
     margin-top: 8px;
 }
 
-.wd-margin-16px-top {
-    margin-top: 16px;
+.wd-margin-12px-top {
+    margin-top: 12px;
 }
 
 .wd-margin-16px-left {
@@ -190,8 +152,48 @@ a {
     padding: 16px;
 }
 
-.wd-padding-bottom-16px {
-    padding-bottom: 16px;
+.wd-padding-12px {
+    padding: 12px;
+}
+
+.wd-padding-vertical-12px {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    line-height: 18px;
+}
+
+.wd-padding-vertical-8px {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.post-c-ellipses {
+    position: relative;
+    top: 13px;
+}
+
+.wd-padding-horizontal-16px {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.wd-padding-right-16px {
+    padding-right: 16px;
+}
+
+.wd-padding-top-12px {
+    padding-top: 12px;
+}
+
+.wd-padding-bottom-8px {
+    padding-bottom: 8px;
 }
 
 .wd-padding-8px {
@@ -206,17 +208,33 @@ a {
     font-size: 12px;
 }
 
+.wd-font-20px {
+    font-size: 20px;
+}
+
+.wd-font-13px {
+    font-size: 13px;
+}
+
+.wd-font-15px {
+    font-size: 15px;
+}
+
+.wd-font-line-17px {
+    line-height: 17px
+}
+
 .wd-float-right {
     float: right;
 }
 
-.wd-post > img {
-    width: 100px;
-    height: 100px;
-    border-radius: 12px;
-    object-fit: cover;
+.wd-float-left {
+    float: left;
 }
 
+.wd-radius-16px {
+    border-radius: 16px;
+}
 
 .wd-padding-bottom-0px {
     padding-bottom: 0;
@@ -224,4 +242,13 @@ a {
 
 .wd-display-inline-block {
     display: inline-block;
+}
+
+h5 {
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 12px;
+    line-height: 15px;
 }
