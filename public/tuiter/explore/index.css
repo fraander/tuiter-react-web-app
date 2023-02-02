@@ -1,3 +1,8 @@
+body {
+    background-color: white;
+    color: black;
+}
+
 #underline {
     margin-bottom: 3px;
     height: 4px;
@@ -20,7 +25,6 @@
 }
 
 
-
 #search-input {
     background: none;
     outline: none;
@@ -32,4 +36,26 @@
 .wd-tab-header {
     font-size: 15px;
     display: inline;
+}
+
+.wd-outline {
+    outline: lightgray solid 1px;
+}
+
+.wd-bg-light-gray {
+    background-color: #F0F3F4;
+}
+
+.wd-hero-image-wrapper {
+    position: relative;
+}
+
+.wd-hero-image {
+    width: 100%;
+}
+
+.wd-hero-image-overlay {
+    position: absolute;
+    bottom: 8px;
+    left: 12px;
 }
