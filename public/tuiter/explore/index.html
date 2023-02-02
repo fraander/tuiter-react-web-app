@@ -58,7 +58,7 @@
                     </span>
         </a>
         <a class="list-group-item list-group-item-action" href="">
-                     <span class="fa-stack fa-2x" style="font-size: 10px; width: 20px">
+                     <span id="more-toolbar-item" class="fa-stack fa-2x">
                       <i class="fa fa-circle fa-stack-2x"></i>
                       <i class="fa fa-ellipsis-h fa-inverse fa-stack-1x"></i>
                     </span>
@@ -70,13 +70,13 @@
         <ul
                 class="wd-flex-container wd-display-inline wd-flex-big wd-flex-align-center">
             <li class="rounded-pill border border-secondary wd-display-inline wd-flex-container wd-flex-big p-1">
-                <label class="ms-3 me-2" id="search-label" for="search-input" style="height: 16px;">
+                <label class="ms-3 me-2" id="search-label" for="search-input">
                     <i class="fa fa-search"></i>
                 </label>
                 <input id="search-input" class="wd-flex-big" type="text" placeholder="Search Tuiter"/>
             </li>
             <li class="wd-display-flex ms-3 me-3">
-                <a href="explore-settings.html" style="height: 20px">
+                <a id="cog-icon" href="explore-settings.html">
                     <i class="fa fa-cog fa-1x wd-font-20px"></i>
                 </a>
             </li>
@@ -91,16 +91,15 @@
         </ul>
         <div class="list-group">
             <ul class="container list-group-item p-0 mt-2">
-                <img style="z-index: 0" src="../images/shuttle.png" class="card-img">
-                <h2 style="z-index: 2; margin-top: -3rem; padding-left: 0.5rem;" class="text-white fw-bold">SpaceX's
+                <img src="../images/shuttle.png" class="card-img">
+                <h2 class="wd-text-overlay text-white fw-bold">SpaceX's
                     Starship</h2>
             </ul>
 
             <div class="list-group-item">
                 <img alt="react logo"
                      src="../images/react.png"
-                     style="width: 100px; height: 100px; float: right; border-radius: 12px;"
-                     class="ms-4"
+                     class="ms-4 wd-post-image"
                 />
                 <p class="text-secondary">Web Development</p>
                 <span>
@@ -108,7 +107,7 @@
                     <i class="fa fa-check-circle"></i>
                     <span class="fs-normal text-secondary"> • 2h</span>
                 </span>
-                <p class="fw-bold" style="line-height: 1.1rem">
+                <p class="fw-bold wd-line-height-1-1rem">
                     React.js is a component based front end library that makes it very easy to build Single Page
                     Applications or SPAs
                 </p>
@@ -116,15 +115,14 @@
             <div class="list-group-item">
                 <img alt="javascript logo"
                      src="../images/javascript.png"
-                     style="width: 100px; height: 100px; float: right; border-radius: 12px;"
-                     class="ms-4"
+                     class="ms-4 wd-post-image"
                 />
                 <span>
                     <span class="mt-4 fw-bold">JavaScript</span>
                     <i class="fa fa-check-circle"></i>
                     <span class="fs-normal text-secondary"> • 2h</span>
                 </span>
-                <p class="fw-bold" style="line-height: 1.1rem">
+                <p class="fw-bold wd-line-height-1-1rem">
                     JavaScript is a programming language that can run on browsers as well as desktops.
                 </p>
                 <p class="text-secondary">123K Tuits</p>
@@ -132,8 +130,7 @@
             <div class="list-group-item">
                 <img alt="jquery logo"
                      src="../images/jquery.png"
-                     style="width: 100px; height: 100px; float: right; border-radius: 12px;"
-                     class="ms-4"
+                     class="wd-post-image ms-4"
                 />
                 <p class="text-secondary">Web Development</p>
                 <span>
@@ -146,8 +143,7 @@
             <div class="list-group-item">
                 <img alt="jquery logo"
                      src="../images/nodejs.svg"
-                     style="width: 100px; height: 100px; float: right; border-radius: 12px;"
-                     class="ms-4"
+                     class="wd-post-image ms-4"
                 />
                 <p class="text-secondary">Web Development</p>
                 <span>
@@ -164,9 +160,7 @@
             <div class="list-group-item mb-1"><h3>Who to follow</h3></div>
             <div class="list-group-item wd-display-flex wd-justify-space-between">
                 <a class="wd-profile-link wd-display-flex">
-                    <img src="../images/java.png" class="me-2" style="border-radius: 800px; width: 36px;
-                        height:
-                        36px">
+                    <img src="../images/java.png" class="me-2 wd-profile-image";/>
                     <div>
                         Java <i class="fa fa-check-circle"></i>
                         <p class="wd-fg-dark-gray">@Java</p>
@@ -176,9 +170,7 @@
             </div>
             <div class="list-group-item wd-display-flex wd-justify-space-between">
                 <a class="wd-profile-link wd-display-flex">
-                    <img src="../images/relativity.jpg" class="me-2" style="border-radius: 800px; width: 36px;
-                        height:
-                        36px">
+                    <img src="../images/relativity.jpg" class="me-2 wd-profile-image">
                     <div>
                         Relativity Space <i class="fa fa-check-circle"></i>
                         <p class="wd-fg-dark-gray">@relativityspace</p>
@@ -188,9 +180,7 @@
             </div>
             <div class="list-group-item wd-display-flex wd-justify-space-between">
                 <a class="wd-profile-link wd-display-flex">
-                    <img src="../images/virgin.png" class="me-2" style="border-radius: 800px; width: 36px;
-                        height:
-                        36px">
+                    <img src="../images/virgin.png" class="me-2 wd-profile-image">
                     <div>
                         Virgin Galactic <i class="fa fa-check-circle"></i>
                         <p class="wd-fg-dark-gray">@virgingalactic</p>
@@ -200,9 +190,7 @@
             </div>
             <div class="list-group-item wd-display-flex wd-justify-space-between">
                 <a class="wd-profile-link wd-display-flex">
-                    <img src="../images/nasa.jpg" class="me-2" style="border-radius: 800px; width: 36px;
-                        height:
-                        36px">
+                    <img src="../images/nasa.jpg" class="me-2 wd-profile-image">
                     <div>
                         NASA <i class="fa fa-check-circle"></i>
                         <p class="wd-fg-dark-gray">@NASA</p>
@@ -212,9 +200,7 @@
             </div>
             <div class="list-group-item wd-display-flex wd-justify-space-between">
                 <a class="wd-profile-link wd-display-flex">
-                    <img src="../images/tesla.png" class="me-2" style="border-radius: 800px; width: 36px;
-                        height:
-                        36px">
+                    <img src="../images/tesla.png" class="me-2 wd-profile-image">
                     <div>
                         Tesla <i class="fa fa-check-circle"></i>
                         <p class="wd-fg-dark-gray">@Tesla</p>
