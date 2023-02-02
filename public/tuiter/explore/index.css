@@ -1,36 +1,27 @@
-#underline {
-    margin-bottom: 3px;
-    height: 4px;
-    border-radius: 100px;
+body {
+    background-color: white;
+    color: black;
 }
 
-.wd-post.wd-post-ef {
-    min-height: 100px
+h3 {
+    margin: 0;
+
 }
 
-.wd-post-image {
-    width: 100px;
-    height: 100px;
-    border-radius: 12px;
-    object-fit: cover;
-}
-
-::placeholder {
-    color: darkgray;
-}
-
-
-
-#search-input {
-    background: none;
+input[type=text], input[type=text]:focus {
+    border: hidden;
     outline: none;
-    border: none;
-    color: white;
+    margin: 1px;
+    margin-right: 8px;
 }
 
-
-.wd-tab-header {
-    font-size: 15px;
-    display: inline;
+.wd-profile-link {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
 }
 
+.wd-profile-link:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
