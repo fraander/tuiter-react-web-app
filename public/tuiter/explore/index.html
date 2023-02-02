@@ -9,8 +9,9 @@
     <title>Explore</title>
 </head>
 <body>
+<div class="d-flex justify-content-center">
 <div class="container row mt-4">
-    <div class="col-xl-2 col-lg-1 list-group">
+    <div class="col-xl-2 col-lg-1 col-md-1 col-sm-1 list-group">
         <a class="list-group-item list-group-item-action" href="">
             <i class="fab fa-twitter"></i>
         </a>
@@ -65,7 +66,7 @@
         </a>
         <button class="btn btn-primary rounded-pill mt-2">Tuit</button>
     </div>
-    <div class="col-xl-6 col-lg-6 ms-4 me-4">
+    <div class="col-xl-6 col-lg-6 col-md-9 col-sm-9 ms-3 me-3">
         <ul
                 class="wd-flex-container wd-display-inline wd-flex-big wd-flex-align-center">
             <li class="rounded-pill border border-secondary wd-display-inline wd-flex-container wd-flex-big p-1">
@@ -85,8 +86,78 @@
             <li class="nav-item"><a href="#" class="nav-link">Trending</a></li>
             <li class="nav-item"><a href="#" class="nav-link">News</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Sports</a></li>
-            <li class="nav-item"><a href="#" class="nav-link d-block">Entertainment</a></li>
+            <li class="nav-item"><a href="#" class="nav-link d-block d-xl-block d-lg-block d-md-block d-sm-none">
+                Entertainment</a></li>
         </ul>
+        <div class="list-group">
+            <ul class="container list-group-item p-0 mt-2">
+                <img style="z-index: 0" src="../images/shuttle.png" class="card-img">
+                <h2 style="z-index: 2; margin-top: -3rem; padding-left: 0.5rem;" class="text-white fw-bold">SpaceX's
+                    Starship</h2>
+            </ul>
+
+            <div class="list-group-item">
+                <img alt="react logo"
+                     src="../images/react.png"
+                     style="width: 100px; height: 100px; float: right; border-radius: 12px;"
+                     class="ms-4"
+                />
+                <p class="text-secondary">Web Development</p>
+                <span>
+                    <span class="mt-4 fw-bold">ReactJS</span>
+                    <i class="fa fa-check-circle"></i>
+                    <span class="fs-normal text-secondary"> • 2h</span>
+                </span>
+                <p class="fw-bold" style="line-height: 1.1rem">
+                    React.js is a component based front end library that makes it very easy to build Single Page
+                    Applications or SPAs
+                </p>
+            </div>
+            <div class="list-group-item">
+                <img alt="javascript logo"
+                     src="../images/javascript.png"
+                     style="width: 100px; height: 100px; float: right; border-radius: 12px;"
+                     class="ms-4"
+                />
+                <span>
+                    <span class="mt-4 fw-bold">JavaScript</span>
+                    <i class="fa fa-check-circle"></i>
+                    <span class="fs-normal text-secondary"> • 2h</span>
+                </span>
+                <p class="fw-bold" style="line-height: 1.1rem">
+                    JavaScript is a programming language that can run on browsers as well as desktops.
+                </p>
+                <p class="text-secondary">123K Tuits</p>
+            </div>
+            <div class="list-group-item">
+                <img alt="jquery logo"
+                     src="../images/jquery.png"
+                     style="width: 100px; height: 100px; float: right; border-radius: 12px;"
+                     class="ms-4"
+                />
+                <p class="text-secondary">Web Development</p>
+                <span>
+                    <span class="mt-4 fw-bold">jQuery</span>
+                    <i class="fa fa-check-circle"></i>
+                    <span class="fs-normal text-secondary"> • 2h</span>
+                </span>
+                <p class="text-secondary">123K Tuits</p>
+            </div>
+            <div class="list-group-item">
+                <img alt="jquery logo"
+                     src="../images/nodejs.svg"
+                     style="width: 100px; height: 100px; float: right; border-radius: 12px;"
+                     class="ms-4"
+                />
+                <p class="text-secondary">Web Development</p>
+                <span>
+                    <span class="mt-4 fw-bold">NodeJS</span>
+                    <i class="fa fa-check-circle"></i>
+                    <span class="fs-normal text-secondary"> • 2h</span>
+                </span>
+                <p class="text-secondary">123K Tuits</p>
+            </div>
+        </div>
     </div>
     <div class="col-xl-3 col-lg-4 d-none d-lg-block d-xl-block d-xxl-block list-group">
         <div class="list-group">
@@ -153,6 +224,7 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 </body>
 </html>

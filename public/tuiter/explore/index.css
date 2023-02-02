@@ -25,3 +25,10 @@ input[type=text], input[type=text]:focus {
     text-decoration: none;
     cursor: pointer;
 }
+
+.wd-article-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    object-fit: cover;
+}
