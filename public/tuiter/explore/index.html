@@ -9,12 +9,60 @@
     <link href="index.css" rel="stylesheet"/>
 </head>
 <body>
-<div class="container">
+<div class="container wd-page-wrapper">
     <div class="row">
-        <div class="col-2">
-            Sidebar
+        <div class="col-2 mt-4">
+            <ul class="list-unstyled wd-toolbar">
+                <li>
+                    <i class="fab fa-twitter wd-fg-accent"></i>
+                    <span></span>
+                </li>
+                <li>
+                    <i class="fa fa-home"></i>
+                    <span class="d-none d-lg-inline">Home</span>
+                </li>
+                <li>
+                    <i class="fa fa-hashtag fw-bold"></i>
+                    <span class="d-none d-lg-inline fw-bold">Explore</span>
+                </li>
+                <li>
+                    <i class="fa fa-bell"></i>
+                    <span class="d-none d-lg-inline">Notifications</span>
+                </li>
+                <li>
+                    <i class="fa fa-envelope"></i>
+                    <span class="d-none d-lg-inline">Messages</span>
+                </li>
+                <li>
+                    <i class="fa fa-bookmark"></i>
+                    <span class="d-none d-lg-inline">Bookmarks</span>
+                </li>
+                <li>
+                    <i class="fa fa-fire"></i>
+                    <span class="d-none d-lg-inline">Top Articles</span>
+                </li>
+                <li>
+                    <i class="fa fa-user"></i>
+                    <span class="d-none d-lg-inline">Profile</span>
+                </li>
+                <li>
+                    <span id="more-toolbar-item" class="wd-font-10px fa-stack fa-2x">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-ellipsis-h fa-inverse fa-stack-1x"></i>
+                    </span>
+                    <span class="d-none d-lg-inline">More</span>
+                </li>
+                <li>
+                    <button class="rounded-pill btn btn-primary mt-2 w-100">
+                        <i class="fa fa-plus d-inline d-sm-none"></i>
+                        <span class="d-none d-sm-inline">
+                        Tuit
+                        </span>
+                    </button>
+                </li>
+            </ul>
         </div>
-        <div class="col-8">
+        <div class="col-7">
             <div class="wd-outline wd-padding-16px wd-padding-bottom-0px" id="toolbar">
                 <div id="search-bar">
                     <ul class="wd-margin-16px-bottom wd-flex-container wd-display-inline wd-flex-big wd-flex-align-center">
@@ -41,45 +89,45 @@
                 <div id="tabs">
                     <div class="wd-display-inline-block">
                         <ul class="wd-display-inline ">
-                            <li class="wd-margin-16px-right wd-display-inline">
+                            <li class="me-2 wd-display-inline">
                                 <div class="wd-display-inline-block">
-                                    <h2 class="wd-flex-big wd-tab-header fw-bold">
+                                    <p class="wd-flex-big  fw-bold">
                                         For You
-                                    </h2>
+                                    </p>
 
-                                    <div id="underline" class="wd-margin-8px-top wd-bg-accent"></div>
+                                    <div id="underline" class="wd-margin-4px-top wd-bg-accent"></div>
                                 </div>
                             </li>
                             <li
-                                    class="wd-margin-16px-right wd-display-inline">
+                                    class="me-2 wd-display-inline">
                                 <div class="wd-display-inline-block wd-margin-8px-bottom">
-                                    <h2 class="wd-tab-header fw-bold text-secondary">
+                                    <p class=" fw-bold text-secondary">
                                         Trending
-                                    </h2>
+                                    </p>
                                 </div>
                             </li>
-                            <li class="wd-margin-16px-right wd-display-inline">
+                            <li class="me-2 wd-display-inline">
                                 <div class="wd-display-inline-block wd-margin-8px-bottom">
-                                    <h2 class="wd-tab-header fw-bold text-secondary">
-                                        COVID-19</h2>
+                                    <p class=" fw-bold text-secondary">
+                                        COVID-19</p>
                                 </div>
                             </li>
-                            <li class="wd-margin-16px-right wd-display-inline">
+                            <li class="me-2 wd-display-inline">
                                 <div class="wd-display-inline-block wd-margin-8px-bottom">
-                                    <h2 class="wd-tab-header fw-bold text-secondary">
-                                        News</h2>
+                                    <p class=" fw-bold text-secondary">
+                                        News</p>
                                 </div>
                             </li>
-                            <li class="wd-margin-16px-right wd-display-inline">
+                            <li class="me-2 wd-display-inline">
                                 <div class="wd-display-inline-block wd-margin-8px-bottom">
-                                    <h2 class="wd-tab-header fw-bold text-secondary">
-                                        Sports</h2>
+                                    <p class=" fw-bold text-secondary">
+                                        Sports</p>
                                 </div>
                             </li>
-                            <li class="wd-margin-16px-right wd-display-inline">
+                            <li class="me-2 wd-display-inline">
                                 <div class="wd-display-inline-block wd-margin-8px-bottom">
-                                    <h2 class="wd-tab-header fw-bold text-secondary">
-                                        Entertainment</h2>
+                                    <p class=" fw-bold text-secondary">
+                                        Entertainment</p>
                                 </div>
                             </li>
                         </ul>
@@ -141,7 +189,51 @@
                 </div>
             </div>
         </div>
-        <div class="col-2">Who to follow</div>
+        <div class="col-3 d-none d-lg-block mt-4">
+            <div class="p-2 wd-bg-light-gray wd-radius-16px">
+                <div class="mb-1"><h3>Who to follow</h3></div>
+                <div class="mb-2 wd-display-flex wd-justify-space-between">
+                    <a class="wd-profile-link wd-display-flex text-black text-decoration-none">
+                        <img src="../images/northeastern.jpg" class="me-2 wd-profile-image">
+                        <div>
+                            <p class="fw-bold">Northeastern U <i class="fa wd-fg-accent fa-check-circle"></i></p>
+                            <p class="wd-fg-dark-gray">@Northeastern</p>
+                        </div>
+                    </a>
+                    <button class="btn-sm btn-primary bg-black fw-bold rounded-pill">Follow</button>
+                </div>
+                <div class="mb-2 wd-display-flex wd-justify-space-between ">
+                    <a class="wd-profile-link wd-display-flex text-black text-decoration-none">
+                        <img src="../images/javascript.png" class="me-2 wd-profile-image">
+                        <div>
+                            <p class="fw-bold">JavaScript <i class="fa wd-fg-accent fa-check-circle"></i></p>
+                            <p class="wd-fg-dark-gray">@javascript</p>
+                        </div>
+                    </a>
+                    <button class="btn-sm btn-primary bg-black fw-bold rounded-pill">Follow</button>
+                </div>
+                <div class="mb-2 wd-display-flex wd-justify-space-between ">
+                    <a class="wd-profile-link wd-display-flex text-black text-decoration-none">
+                        <img src="../images/profile-jon.jpeg" class="me-2 wd-profile-image">
+                        <div>
+                            <p class="fw-bold">Jon Kent <i class="fa wd-fg-accent fa-check-circle"></i></p>
+                            <p class="wd-fg-dark-gray">@feoa</p>
+                        </div>
+                    </a>
+                    <button class="btn-sm btn-primary bg-black fw-bold rounded-pill">Follow</button>
+                </div>
+                <a class="wd-fg-accent text-decoration-none wd-font-13px">Show more</a>
+            </div>
+            <div class="p-2 text-secondary wd-font-10px">
+                <a>Terms of Service</a>
+                <a>Privacy&nbsp;Policy</a>
+                <a>Cookie&nbsp;Policy</a>
+                <a>Accessibility</a>
+                <a>Ads info</a>
+                <a>More...</a><br/>
+                <a>©&nbsp;2023&nbsp;Twitter,&nbsp;Inc.</a>
+            </div>
+        </div>
     </div>
 </div>
 </body>
