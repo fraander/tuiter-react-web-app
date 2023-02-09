@@ -1,23 +1,16 @@
-body {
-    background-color: white;
-    color: black;
-}
-
 h3 {
     margin: 0;
-
 }
 
 input[type=text], input[type=text]:focus {
     border: hidden;
     outline: none;
-    margin: 1px;
-    margin-right: 8px;
+    margin: 1px 8px 1px 1px;
 }
 
 .wd-profile-link {
     text-decoration: none;
-    color: black;
+    color: white;
     cursor: pointer;
 }
 
@@ -60,7 +53,6 @@ input[type=text], input[type=text]:focus {
 
 .wd-post-image {
     width: 20%;
-    /*height: 20%;*/
     float: right;
     border-radius: 12px;
 }
