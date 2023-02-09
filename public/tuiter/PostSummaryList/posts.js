@@ -29,6 +29,7 @@ const exploreItems = [
         time: 'last month',
         image: '../images/nodejs.svg',
         tweets: '120K',
-    },];
+    },
+];
 
 export default exploreItems;
