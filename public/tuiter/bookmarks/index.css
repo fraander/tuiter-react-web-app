@@ -1,0 +1,44 @@
+#footer {
+    height: 16px;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.wd-profile-image {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.wd-max-width-504px {
+    max-width: 504px;
+}
+
+
+.wd-width-80percent {
+    width: 80%;
+}
+
+.wd-padding-left-80px {
+    padding-left: 80px;
+}
+
+.wd-max-width-506px {
+    max-width: 506px;
+}
+
+.wd-article-image {
+    width: 100%;
+    max-height: 264px;
+    object-fit: cover;
+}
+
+.wd-radius-16px-top {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}

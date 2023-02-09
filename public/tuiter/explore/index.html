@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Explore</title>
+    <link href="index.css" rel="stylesheet"/>
+    <link href="../index.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="wd-page-wrapper wd-outline">
+    <div class="wd-outline wd-padding-16px wd-padding-bottom-0px" id="toolbar">
+        <div id="search-bar">
+            <ul class="wd-margin-16px-bottom wd-flex-container wd-display-inline wd-flex-big wd-flex-align-center">
+                <li id="search-capsule"
+                    class="wd-padding-8px wd-bg-dim-gray wd-capsule-border-radius wd-display-inline wd-flex-container wd-margin-12px-right wd-flex-big">
+                    <label
+                            class="wd-width-16px wd-fill-dark-gray wd-fg-dark-gray wd-flex-small wd-margin-16px-left wd-margin-16px-right wd-font-12px wd-margin-16px-right wd-margin-16px-left"
+                            id="search-label"
+                            for="search-input">
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 509.4 509.3"><path d="M450.5 58.8c-78.4-78.4-205.5-78.4-283.9 0-69.4 69.4-77.3 176.4-24.1 254.8L10.9 445.2c-14.6 14.6-14.6 38.6 0 53.2s38.6 14.6 53.2 0l131.6-131.6c78.4 53.2 185.4 45.4 254.8-24.1 78.5-78.4 78.5-205.5 0-283.9zM209.2 300.2c-54.9-54.9-54.9-143.4 0-198.2s143.4-54.9 198.2 0 54.9 143.4 0 198.2-143.4 54.3-198.2 0z"/></svg>
+                    </label>
+                    <input id="search-input" class="wd-font-12px wd-flex-big" type="text" placeholder="Search Tuiter"/>
+                </li>
+                <li class="wd-display-flex">
+                    <div class="wd-display-flex">
+                        <a href="explore-settings.html">
+                            <svg id="gear-svg"
+                                 class="wd-fill-accent wd-width-16px wd-height-16px"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 xml:space="preserve"
+                                 viewBox="0 0 498.5 532.2"><path d="m486.7 335.9-46.2-33.3c2.3-11.9 3.5-24 3.5-36.6s-1.2-24.7-3.5-36.6l46.2-33.3c11.8-8.6 15.3-24.6 7.9-37.2L464.7 107c-7.3-12.6-22.9-17.7-36.2-11.7l-51.9 23.4c-18.4-16-39.9-28.5-63.4-36.6l-5.8-56.7C306 11 293.8 0 279.2 0h-59.9c-14.5 0-26.7 11-28.2 25.5l-5.8 56.7c-23.5 8.2-44.9 20.7-63.4 36.6L70 95.4c-13.3-6-28.9-.9-36.2 11.7L3.9 159c-7.3 12.6-3.8 28.6 7.9 37.2L58 229.5c-2.3 11.8-3.5 24-3.5 36.6s1.2 24.7 3.5 36.6L11.8 336C0 344.6-3.5 360.6 3.9 373.2l29.9 51.9c7.3 12.6 22.9 17.7 36.2 11.7l51.9-23.4c18.4 16 39.9 28.5 63.4 36.6l5.8 56.7c1.5 14.5 13.7 25.5 28.2 25.5h59.9c14.5 0 26.7-11 28.2-25.5l5.8-56.7c23.5-8.2 44.9-20.7 63.4-36.6l51.9 23.4c13.3 6 28.9.9 36.2-11.7l29.9-51.9c7.3-12.7 3.9-28.8-7.9-37.3zm-237.4 28.3c-54.3 0-98.2-43.9-98.2-98.2s43.9-98.2 98.2-98.2 98.2 43.9 98.2 98.2-43.9 98.2-98.2 98.2z"/></svg>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="tabs">
+            <div class="wd-display-inline-block">
+                <ul class="wd-display-inline">
+                    <li class="wd-margin-16px-right wd-display-inline wd-fg-accent">
+                        <div class="wd-display-inline-block">
+                            <h2 class="wd-flex-big wd-tab-header">
+                                For You
+                            </h2>
+
+                            <div id="underline" class="wd-margin-8px-top wd-bg-accent"></div>
+                        </div>
+                    </li>
+                    <li
+                            class="wd-margin-16px-right wd-display-inline">
+                        <div class="wd-display-inline-block wd-margin-8px-bottom">
+                            <h2 class="wd-tab-header">
+                                Trending
+                            </h2>
+                        </div>
+                    </li>
+                    <li class="wd-margin-16px-right wd-display-inline">
+                        <div class="wd-display-inline-block wd-margin-8px-bottom">
+                            <h2 class="wd-tab-header">
+                                COVID-19</h2>
+                        </div>
+                    </li>
+                    <li class="wd-margin-16px-right wd-display-inline">
+                        <div class="wd-display-inline-block wd-margin-8px-bottom">
+                            <h2 class="wd-tab-header">
+                                News</h2>
+                        </div>
+                    </li>
+                    <li class="wd-margin-16px-right wd-display-inline">
+                        <div class="wd-display-inline-block wd-margin-8px-bottom">
+                            <h2 class="wd-tab-header">
+                                Sports</h2>
+                        </div>
+                    </li>
+                    <li class="wd-margin-16px-right wd-display-inline">
+                        <div class="wd-display-inline-block wd-margin-8px-bottom">
+                            <h2 class="wd-tab-header">
+                                Entertainment</h2>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="posts" class="wd-outline">
+        <div id="post-1" class="wd-post wd-padding-horizontal-16px wd-padding-vertical-8px wd-outline">
+            <!-- Type C Post -->
+            <a class="post-c-ellipses wd-float-right wd-width-12px wd-fill-dark-gray">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 403.21 97.1">
+                    <path d="m97.11,48.55c0,26.82-21.74,48.55-48.55,48.55S0,75.37,0,48.55,21.74,0,48.55,0s48.55,21.73,48.55,48.55"/>
+                    <path d="m250.16,48.55c0,26.82-21.73,48.55-48.55,48.55s-48.55-21.73-48.55-48.55S174.79,0,201.6,0s48.55,21.73,48.55,48.55"/>
+                    <path d="m403.21,48.55c0,26.82-21.74,48.55-48.55,48.55s-48.55-21.73-48.55-48.55S327.84,0,354.65,0s48.55,21.73,48.55,48.55"/>
+                </svg>
+            </a>
+            <h4>Trending in Science</h4>
+            <h3>Starship</h3>
+            <h4>55.5K Tuits</h4>
+        </div>
+        <div id="post-2" class="wd-post wd-padding-horizontal-16px wd-padding-vertical-8px wd-outline">
+            <a style="position:relative; top: 13px;" class="wd-float-right wd-width-12px wd-fill-dark-gray">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 403.21 97.1">
+                    <path d="m97.11,48.55c0,26.82-21.74,48.55-48.55,48.55S0,75.37,0,48.55,21.74,0,48.55,0s48.55,21.73,48.55,48.55"/>
+                    <path d="m250.16,48.55c0,26.82-21.73,48.55-48.55,48.55s-48.55-21.73-48.55-48.55S174.79,0,201.6,0s48.55,21.73,48.55,48.55"/>
+                    <path d="m403.21,48.55c0,26.82-21.74,48.55-48.55,48.55s-48.55-21.73-48.55-48.55S327.84,0,354.65,0s48.55,21.73,48.55,48.55"/>
+                </svg>
+            </a>
+            <h4>Sports • Trending</h4>
+            <h3>Joe DiMaggio</h3>
+            <h4>5,218 Tuits</h4>
+        </div>
+        <div id="post-3" class="wd-post wd-post-ef wd-padding-16px wd-outline">
+            <img alt="photo of a gondola in switzerland" class="wd-post-image wd-float-right wd-margin-16px-left"
+                 src="../images/Gondola.png"/>
+            <h5>The New York Times <span>• Yesterday</span></h5>
+            <h3>CNN's Cuomo conundrum: A star anchor with a brother in trouble</h3>
+        </div>
+        <div id="post-4" class="wd-post wd-post-ef wd-padding-16px wd-outline">
+            <img class="wd-post-image wd-float-right  wd-margin-16px-left" src="../images/shuttle.png"
+                 alt="photo of the space shuttle launching"/>
+            <h5>Bloomberg Opinion <span>• Yesterday</span></h5>
+            <h3>Thinking about getting a booster? Read this first.</h3>
+        </div>
+        <div id="post-5" class="wd-post wd-post-ef wd-padding-16px wd-outline">
+            <img class="wd-post-image wd-float-right  wd-margin-16px-left" src="../images/Huntington.jpeg"
+                 alt="photo of the space shuttle launching"/>
+            <h4>COVID-19 • LIVE</h4>
+            <h3>COVID-19: News and updates for Massachusetts</h3>
+        </div>
+        <div id="post-6" class="wd-post wd-post-ef wd-padding-16px wd-outline">
+            <img class="wd-post-image wd-float-right  wd-margin-16px-left" src="../images/Charles.jpeg"
+                 alt="photo of the space shuttle launching"/>
+            <h4>Winter Storm Watch • LIVE</h4>
+            <h3>Winter Storm: News and updates for New York City</h3>
+        </div>
+        <div class="wd-post-ef wd-outline">
+            <div id="footer"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

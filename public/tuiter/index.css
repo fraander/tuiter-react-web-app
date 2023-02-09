@@ -1,0 +1,254 @@
+body {
+    font-family: sans-serif;
+    margin: 0 16px 0 16px;
+    background-color: black;
+    color: white;
+}
+
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    line-height: 100%;
+}
+
+.wd-justify-space-between {
+    justify-content: space-between
+}
+
+.wd-display-flex {
+    display: flex;
+    align-items: center;
+}
+
+.wd-fill-dark-gray {
+    fill: darkgray;
+}
+
+.wd-height-16px {
+    height: 16px;
+}
+
+.wd-width-12px {
+    width: 12px;
+}
+
+.wd-width-16px {
+    width: 16px;
+}
+
+.wd-fg-dark-gray {
+    color: darkgray;
+}
+
+.wd-bg-dim-gray {
+    background-color: dimgray;
+}
+
+.wd-capsule-border-radius {
+    border-radius: 50vh;
+}
+
+
+
+
+h3, h4 {
+    margin: 12px 0;
+}
+
+h4, h5 {
+    font-size: 13px;
+    line-height: 0;
+}
+
+h4 {
+    font-weight: normal;
+}
+
+.wd-page-wrapper {
+    min-width: 286px;
+    height: 100vh;
+}
+
+h5 > span {
+    font-weight: normal;
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+}
+
+h4 {
+    color: rgb(110, 118, 125);
+}
+
+.wd-display-inline {
+    display: inline;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.wd-flex-container {
+    display: flex;
+    justify-items: center;
+}
+
+.wd-fill-accent {
+    fill: rgb(29, 161, 242);
+}
+
+.wd-fg-accent {
+    color: rgb(29, 161, 242);
+}
+
+.wd-fg-red {
+    color: #ff7070;
+}
+
+.wd-bg-accent {
+    background-color: rgb(29, 161, 242);
+}
+
+.wd-flex-small {
+    flex-grow: 0;
+}
+
+.wd-flex-big {
+    flex-grow: 1;
+}
+
+.wd-margin-8px-bottom {
+    margin-bottom: 8px;
+}
+
+.wd-margin-12px-bottom {
+    margin-bottom: 12px;
+}
+
+.wd-margin-8px-top {
+    margin-top: 8px;
+}
+
+.wd-margin-12px-top {
+    margin-top: 12px;
+}
+
+.wd-margin-16px-left {
+    margin-left: 16px;
+}
+
+.wd-margin-16px-right {
+    margin-right: 16px;
+}
+
+.wd-margin-12px-right {
+    margin-right: 12px;
+}
+
+.wd-margin-16px-bottom {
+    margin-bottom: 16px;
+}
+
+.wd-padding-16px {
+    padding: 16px;
+}
+
+.wd-padding-12px {
+    padding: 12px;
+}
+
+.wd-padding-vertical-12px {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    line-height: 18px;
+}
+
+.wd-padding-vertical-8px {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.post-c-ellipses {
+    position: relative;
+    top: 13px;
+}
+
+.wd-padding-horizontal-16px {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.wd-padding-right-16px {
+    padding-right: 16px;
+}
+
+.wd-padding-top-12px {
+    padding-top: 12px;
+}
+
+.wd-padding-bottom-8px {
+    padding-bottom: 8px;
+}
+
+.wd-padding-8px {
+    padding: 8px;
+}
+
+.wd-outline {
+    outline: rgb(47, 51, 54) solid 1px;
+}
+
+.wd-font-12px {
+    font-size: 12px;
+}
+
+.wd-font-20px {
+    font-size: 20px;
+}
+
+.wd-font-13px {
+    font-size: 13px;
+}
+
+.wd-font-15px {
+    font-size: 15px;
+}
+
+.wd-font-line-17px {
+    line-height: 17px
+}
+
+.wd-float-right {
+    float: right;
+}
+
+.wd-float-left {
+    float: left;
+}
+
+.wd-radius-16px {
+    border-radius: 16px;
+}
+
+.wd-padding-bottom-0px {
+    padding-bottom: 0;
+}
+
+.wd-display-inline-block {
+    display: inline-block;
+}
+
+h5 {
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 12px;
+    line-height: 15px;
+}
