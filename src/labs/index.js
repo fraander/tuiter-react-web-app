@@ -1,9 +1,12 @@
 import Assignment6 from "./a6";
+import Nav from "../nav";
 
-export default function Labs() {
+function Labs() {
     return (
         <div>
-            <Assignment6 />
+            <Nav/>
+            <Assignment6/>
         </div>
     );
 }
+export default Labs;
