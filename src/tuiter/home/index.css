@@ -1,0 +1,78 @@
+:root {
+    --gray: #586875;
+    --light-gray: #c9cfd3;
+    --accent: #1D9BF0;
+}
+
+body, #root {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: var(--accent);
+}
+
+p {
+    line-height: 1.3rem;
+    margin: 0;
+}
+
+.wd-profile-image {
+    width: 64px;
+    height: 64px;
+}
+
+
+.wd-profile-image-small {
+    width: 24px;
+    height: 24px;
+}
+
+.wd-fg-gray {
+    color: var(--gray);
+}
+
+.wd-fg-accent {
+    color: var(--accent);
+}
+
+.wd-post-image {
+    height: 320px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.wd-space-between {
+    justify-content: space-between;
+}
+
+.wd-outline {
+    outline: var(--light-gray) solid thin;
+}
+
+.wd-quote-tweet-body {
+    padding: 0;
+    margin: 0;
+    line-height: 1rem;
+}
+
+.wd-flex-small {
+    flex-grow: 0;
+}
+
+.wd-flex-big {
+    flex-grow: 1;
+}
+
+.wd-footer {
+    flex-grow: 1;
+}
+
+.wd-home-container {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    height: 100%;
+}
