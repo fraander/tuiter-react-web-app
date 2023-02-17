@@ -1,7 +1,7 @@
 import React from "react";
 import PostSummaryList from "../post-summary-list";
 
-const ExploreComponent = () => {
+export default function ExploreComponent () {
     return(
         <>
             <div className="row">
@@ -36,4 +36,3 @@ const ExploreComponent = () => {
         </>
     );
 };
-export default ExploreComponent;
