@@ -26,17 +26,17 @@ export default function HomePost(
         // Match URLs
         const regex = /([\w.]+\.(?:com|cc|net|ru)[^,\s]*)/
         replacedText = reactStringReplace(text, regex, (match, i) => (
-            <a href="#" className="text-decoration-underline" key={match + i}>{match}</a>
+            <button className="text-decoration-underline" key={match + i}>{match}</button>
         ));
 
         // Match @-mentions
         replacedText = reactStringReplace(replacedText, /@(\w+)/g, (match, i) => (
-            <a href="#" className="text-decoration-underline" key={match + i}>@{match}</a>
+            <button className="text-decoration-underline" key={match + i}>@{match}</button>
         ));
 
         // Match hashtags
         replacedText = reactStringReplace(replacedText, /#(\w+)/g, (match, i) => (
-            <a href="#" className="text-decoration-underline" key={match + i}>#{match}</a>
+            <button className="text-decoration-underline" key={match + i}>#{match}</button>
         ));
 
         return replacedText
@@ -57,7 +57,7 @@ export default function HomePost(
                 />
                 <div>
                     <p className="mb-0">
-                        <span className="fw-bold">{display_name}</span>
+                        <span className="fw-bold">{display_name}</span>{" "}
                         {verified ? <i className="bi bi-patch-check-fill wd-fg-accent"></i> : <></>}
                         {" "}<span className="wd-fg-gray">@{username}</span>
                         {" • "}<span className="wd-fg-gray">{time_since}</span>
@@ -100,8 +100,8 @@ export default function HomePost(
                     </div>
 
                     {thread
-                        ? <div className="mt-3"><a href="#" className="text-decoration-none">Show this
-                            thread</a></div>
+                        ? <div className="mt-3"><button className="text-decoration-none">Show this
+                            thread</button></div>
                         : <></>}
 
                 </div>

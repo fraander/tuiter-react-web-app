@@ -18,17 +18,17 @@ export default function ExploreComponent () {
             </div>
             <ul className="nav nav-pills mb-2">
                 <li className="nav-item">
-                    <a className="nav-link active" href="#">For You</a>
+                    <button className="nav-link active">For You</button>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">Trending</a>
+                    <button className="nav-link">Trending</button>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">News</a>
+                    <button className="nav-link">News</button>
                 </li>
             </ul>
             <div className="position-relative mb-2">
-                <img src={require("../images/shuttle.png")} alt={"header image for page"} className="w-100"/>
+                <img src={require("../images/shuttle.png")} alt={"space shuttle launching"} className="w-100"/>
                 <h1 className="position-absolute wd-nudge-up text-white">
                     SpaceX Starship</h1>
             </div>
