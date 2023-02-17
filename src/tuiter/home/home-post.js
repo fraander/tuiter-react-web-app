@@ -18,7 +18,7 @@ export default function HomePost(
             time_since,
             username,
             verified
-        }
+        } = p
     }) {
     const replaceWithLinks = (text) => {
         let replacedText;
@@ -26,17 +26,17 @@ export default function HomePost(
         // Match URLs
         const regex = /([\w.]+\.(?:com|cc|net|ru)[^,\s]*)/
         replacedText = reactStringReplace(text, regex, (match, i) => (
-            <a className="text-decoration-underline" key={match + i} href="#">{match}</a>
+            <a href="#" className="text-decoration-underline" key={match + i}>{match}</a>
         ));
 
         // Match @-mentions
         replacedText = reactStringReplace(replacedText, /@(\w+)/g, (match, i) => (
-            <a className="text-decoration-underline" key={match + i} href="#">@{match}</a>
+            <a href="#" className="text-decoration-underline" key={match + i}>@{match}</a>
         ));
 
         // Match hashtags
         replacedText = reactStringReplace(replacedText, /#(\w+)/g, (match, i) => (
-            <a className="text-decoration-underline" key={match + i} href="#">#{match}</a>
+            <a href="#" className="text-decoration-underline" key={match + i}>#{match}</a>
         ));
 
         return replacedText
