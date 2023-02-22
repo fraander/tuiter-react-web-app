@@ -1,36 +1,75 @@
-#underline {
-    margin-bottom: 3px;
-    height: 4px;
-    border-radius: 100px;
+body {
+    background-color: white;
+    color: black;
 }
 
-.wd-post.wd-post-ef {
-    min-height: 100px
+h3 {
+    margin: 0;
+
 }
 
-.wd-post-image {
+input[type=text], input[type=text]:focus {
+    border: hidden;
+    outline: none;
+    margin: 1px;
+    margin-right: 8px;
+}
+
+.wd-profile-link {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.wd-profile-link:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.wd-article-image {
     width: 100px;
     height: 100px;
     border-radius: 12px;
     object-fit: cover;
 }
 
-::placeholder {
-    color: darkgray;
+.wd-profile-image {
+    border-radius: 800px;
+    width: 36px;
+    height: 36px
 }
 
-
-
-#search-input {
-    background: none;
-    outline: none;
-    border: none;
-    color: white;
+#more-toolbar-item {
+    font-size: 10px;
+    width: 20px
 }
 
-
-.wd-tab-header {
-    font-size: 15px;
-    display: inline;
+#search-label {
+    height: 16px;
+    padding-top: 2px;
 }
 
+#cog-icon {
+    height: 20px;
+}
+
+.wd-text-overlay {
+    margin-top: -2.7rem;
+    padding-left: 0.5rem;
+}
+
+.wd-post-image {
+    width: 20%;
+    /*height: 20%;*/
+    float: right;
+    border-radius: 12px;
+}
+
+.wd-line-height-1-1rem {
+    line-height: 1.1rem;
+}
+
+.wd-hero-image {
+    border-radius: 800px;
+    width: 36px;
+}
