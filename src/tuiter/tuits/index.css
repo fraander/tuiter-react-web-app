@@ -1,0 +1,14 @@
+:root {
+    --gray: #586875;
+    --light-gray: #c9cfd3;
+    --accent: #1D9BF0;
+}
+
+.wd-profile-image {
+    width: 64px;
+    height: 64px;
+}
+
+.wd-outline {
+    outline: var(--light-gray) solid thin;
+}
