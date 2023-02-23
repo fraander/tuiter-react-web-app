@@ -1,5 +1,5 @@
 import replaceWithLinks from "../utils";
-import TuitStats from "./TuitStats";
+import TuitStats from "./tuit-stats";
 import {useDispatch} from "react-redux";
 import {deleteTuit} from "./tuits-reducer";
 

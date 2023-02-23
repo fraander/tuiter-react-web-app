@@ -1,0 +1,29 @@
+.wd-profile {
+    height: 104px;
+    width: 104px;
+    object-fit: cover;
+}
+
+p {
+    margin: 0;
+    line-height: 1;
+}
+
+.wd-banner {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.wd-profile-overlay {
+    position: absolute;
+    left: 0;
+    margin-left: 18px;
+    bottom: 0;
+    outline: white solid 4px;
+    /*box-shadow: 0 0px 12px black;*/
+}
+
+button {
+    all: unset;
+}
