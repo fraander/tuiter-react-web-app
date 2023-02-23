@@ -1,5 +1,5 @@
 import p from "./posts.json";
-import reactStringReplace from "react-string-replace";
+import replaceWithLinks from "../utils";
 
 export default function HomePost(
     {
@@ -20,27 +20,6 @@ export default function HomePost(
             verified
         } = p
     }) {
-    const replaceWithLinks = (text) => {
-        let replacedText;
-
-        // Match URLs
-        const regex = /([\w.]+\.(?:com|cc|net|ru)[^,\s]*)/
-        replacedText = reactStringReplace(text, regex, (match, i) => (
-            <button className="text-decoration-underline" key={match + i}>{match}</button>
-        ));
-
-        // Match @-mentions
-        replacedText = reactStringReplace(replacedText, /@(\w+)/g, (match, i) => (
-            <button className="text-decoration-underline" key={match + i}>@{match}</button>
-        ));
-
-        // Match hashtags
-        replacedText = reactStringReplace(replacedText, /#(\w+)/g, (match, i) => (
-            <button className="text-decoration-underline" key={match + i}>#{match}</button>
-        ));
-
-        return replacedText
-    }
 
     return (
         <div key={_id} className="pb-4 pt-3 wd-outline">

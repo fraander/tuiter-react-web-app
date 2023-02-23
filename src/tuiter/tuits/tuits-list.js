@@ -1,5 +1,5 @@
 import {useSelector} from "react-redux";
-import TuitItem from "./TuitItem";
+import TuitItem from "./tuit-item";
 
 export default function TuitsList() {
     const tuits = useSelector(state => state.tuits)
