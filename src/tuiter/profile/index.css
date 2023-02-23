@@ -27,3 +27,28 @@ p {
 button {
     all: unset;
 }
+
+.header-height {
+    height: 60px;
+}
+
+.banner-overlay {
+    position: absolute;
+    height: 300px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+input {
+    all: unset;
+}
+
+.wd-fs-sm {
+    font-size: smaller;
+}
+
+.wd-justify-self-end {
+    justify-self: end;
+}
