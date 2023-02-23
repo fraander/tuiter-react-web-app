@@ -10,6 +10,11 @@ body, #root {
     display: flex;
 }
 
+button {
+    all: unset;
+    color: var(--accent);
+}
+
 a:link, a:visited, a:hover, a:active {
     color: var(--accent);
 }
