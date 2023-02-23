@@ -56,7 +56,10 @@ export default function ProfileView({profile}) {
 
         dispatch(updateProfile(updatedProfile));
         setShowEdit(false);
+    }
 
+    const cancelHandler = () => {
+        setShowEdit(false)
         setName(firstName + " " + lastName)
         setBio(bio)
         setLocation(location)
@@ -69,7 +72,9 @@ export default function ProfileView({profile}) {
             className={`d-flex ${showEdit ? "justify-content-between" : "justify-content-start"} align-items-center gap-3 header-height pb-2`}>
             {showEdit ? <>
                 <div className="d-flex gap-3">
-                    <button onClick={() => setShowEdit(false)}><i className="bi bi-x"></i></button>
+                    <button onClick={() => {
+                        cancelHandler()
+                    }}><i className="bi bi-x"></i></button>
                     <p className="fs-3 fw-bolder mb-0">Edit Profile</p>
                 </div>
                 <button
