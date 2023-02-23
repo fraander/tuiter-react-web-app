@@ -1,6 +1,9 @@
 import "./index.css"
+import {useState} from "react";
 
 export default function ProfileView({profile}) {
+
+    const [showEdit, setShowEdit] = useState(true)
 
     const {
         firstName,
@@ -20,11 +23,17 @@ export default function ProfileView({profile}) {
 
     return (<div>
         <div className="d-flex justify-content-start align-items-center gap-3">
-            <i className="bi bi-arrow-left mb-3"></i>
-            <div>
-                <p className="fs-3 fw-bolder mb-1">{firstName}{" "}{lastName}</p>
-                <p>{tuits} Tuits</p>
-            </div>
+            {showEdit ? <>
+                <button onClick={() => setShowEdit(false)}><i className="bi bi-x"></i></button>
+                <p className="fs-3 fw-bolder mb-3 mt-2">Edit Profile</p>
+            </> : <>
+                <i className="bi bi-arrow-left mb-3"></i>
+                <div>
+                    <p className="fs-3 fw-bolder mb-1">{firstName}{" "}{lastName}</p>
+                    <p className="mb-1">{tuits} Tuits</p>
+                </div>
+            </>}
+
         </div>
         <div className="d-flex flex-column position-relative">
             <img className="wd-banner" src={require(`../images/${bannerPicture}`)} alt="banner"/>
@@ -32,7 +41,10 @@ export default function ProfileView({profile}) {
                 <img className="wd-profile wd-profile-overlay rounded-circle"
                      src={require(`../images/${profilePicture}`)} alt="profile"/>
                 <div>
-                    <button className="rounded-pill text-black fw-bold btn btn-outline-secondary">Edit profile</button>
+                    <button className={`rounded-pill text-black fw-bold btn btn-outline-secondary ${showEdit ? "d-none" : ""}`}
+                            onClick={() => setShowEdit(true)}>
+                        Edit profile
+                    </button>
                 </div>
             </div>
         </div>
