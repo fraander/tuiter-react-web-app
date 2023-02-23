@@ -9,9 +9,7 @@ function App() {
         <BrowserRouter>
             <Routes>
                 {/* Added the redirect from the main page so that /labs also works! Hope this is ok. */}
-                <Route path="/" element={<Navigate to="/tuiter/home"/>} />
-                <Route path="" element={<Navigate to="/tuiter/home"/>} />
-                <Route index element={<Labs/>}/>
+                <Route index path="/*" element={<Labs/>}/>
                 <Route path="/labs" element={<Labs/>}/>
                 <Route path="/hello" element={<HelloWorld/>}/>
                 <Route path="/tuiter/*" element={<Tuiter/>}/>
