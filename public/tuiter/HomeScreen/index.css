@@ -1,0 +1,66 @@
+h3 {
+    margin: 0;
+}
+
+input[type=text], input[type=text]:focus {
+    border: hidden;
+    outline: none;
+    margin: 1px 8px 1px 1px;
+}
+
+.wd-profile-link {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.wd-profile-link:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.wd-article-image {
+    width: 100%;
+    max-height: 264px;
+    object-fit: cover;
+}
+
+.wd-profile-image {
+    border-radius: 800px;
+    width: 36px;
+    height: 36px
+}
+
+#more-toolbar-item {
+    font-size: 10px;
+    width: 20px
+}
+
+#search-label {
+    height: 16px;
+    padding-top: 2px;
+}
+
+#cog-icon {
+    height: 20px;
+}
+
+.wd-text-overlay {
+    margin-top: -2.7rem;
+    padding-left: 0.5rem;
+}
+
+.wd-post-image {
+    width: 20%;
+    float: right;
+    border-radius: 12px;
+}
+
+.wd-line-height-1-1rem {
+    line-height: 1.1rem;
+}
+
+.wd-hero-image {
+    border-radius: 800px;
+    width: 36px;
+}

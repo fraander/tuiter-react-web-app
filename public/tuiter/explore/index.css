@@ -13,7 +13,29 @@ body {
     min-height: 100px
 }
 
-.wd-post-image {
+
+h3 {
+    margin: 0;
+}
+
+input[type=text], input[type=text]:focus {
+    border: hidden;
+    outline: none;
+    margin: 1px 8px 1px 1px;
+}
+
+.wd-profile-link {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.wd-profile-link:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.wd-article-image {
     width: 100px;
     height: 100px;
     border-radius: 12px;
@@ -48,6 +70,16 @@ body {
 
 .wd-hero-image-wrapper {
     position: relative;
+}
+
+.wd-post-image {
+    width: 20%;
+    float: right;
+    border-radius: 12px;
+}
+
+.wd-line-height-1-1rem {
+    line-height: 1.1rem;
 }
 
 .wd-hero-image {
