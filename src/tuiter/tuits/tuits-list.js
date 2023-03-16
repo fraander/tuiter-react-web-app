@@ -13,8 +13,8 @@ export default function TuitsList() {
         <div>
             {loading &&
                 <p>Loading...</p>}
-            {tuits.map((tuit) => {
-                return (<div key={tuit._id}>
+            {tuits.map((tuit, index) => {
+                return (<div key={index}>
                     <TuitItem t={tuit}/>
                 </div>);
             })}

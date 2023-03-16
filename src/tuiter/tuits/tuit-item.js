@@ -1,22 +1,23 @@
 import replaceWithLinks from "../utils";
 import TuitStats from "./tuit-stats";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "./tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 
 export default function TuitItem({t}) {
 
     const {
-        _id, userName, time, image, liked, replies, retuits, likes, handle, tuit, retuited, title,
+        _id, userName, time, image, handle, tuit, title,
     } = t
 
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
 
     return (<div className="d-flex gap-4 p-3 pb-1 wd-outline">
         <div>
-            <img className="wd-profile-image w- rounded-circle" src={require(`../images/${image}`)} alt="profile"/>
+            <img className="wd-profile-image w- rounded-circle" src={require(`../images/${image ?? "react.png"}`)}
+                 alt="profile"/>
         </div>
         <div className="d-flex flex-column mx-auto w-100">
             <div>
@@ -28,7 +29,7 @@ export default function TuitItem({t}) {
                 </p>
                 <p>{replaceWithLinks(tuit ?? title)}</p>
             </div>
-            <TuitStats replies={replies} retuits={retuits} likes={likes} liked={liked} retuited={retuited}/>
+            <TuitStats tuit={t}/>
         </div>
         <i className="bi bi-x-lg float-end"
            onClick={() => deleteTuitHandler(_id)}></i>
