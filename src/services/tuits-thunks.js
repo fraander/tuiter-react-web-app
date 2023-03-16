@@ -27,8 +27,8 @@ const templateTuit = {
     "topic": "Space",
     "time": "2h",
     "liked": false,
-    "disliked":false,
-    "dislikes":0,
+    "disliked": false,
+    "dislikes": 0,
     "replies": 0,
     "retuits": 0,
     "likes": 0,
@@ -49,6 +49,6 @@ export const updateTuitThunk =
         'tuits/updateTuit',
         async (tuit) => {
             await service.updateTuit(tuit)
+            return tuit
         }
     )
-

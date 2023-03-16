@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import {createSlice} from "@reduxjs/toolkit";
 import tuits from './tuits.json';
 import {findTuitsThunk, deleteTuitThunk, createTuitThunk, updateTuitThunk} from "../../services/tuits-thunks";
 
@@ -19,8 +19,8 @@ const templateTuit = {
     "topic": "Space",
     "time": "2h",
     "liked": false,
-    "disliked":false,
-    "dislikes":0,
+    "disliked": false,
+    "dislikes": 0,
     "replies": 0,
     "retuits": 0,
     "likes": 0,
@@ -41,26 +41,28 @@ const tuitsSlice = createSlice({
         [findTuitsThunk.rejected]: (state) => {
             state.loading = false
         },
-        [deleteTuitThunk.fulfilled] : (state, {payload}) => {
+        [deleteTuitThunk.fulfilled]: (state, {payload}) => {
             state.loading = false
             state.tuits = state.tuits.filter(t => t._id !== payload)
         },
-        [createTuitThunk.fulfilled] : (state, {payload}) => {
+        [createTuitThunk.fulfilled]: (state, {payload}) => {
             state.loading = false
             console.log()
             state.tuits.push({...templateTuit, ...payload})
         },
-        [updateTuitThunk.fulfilled]: (state, {payload}) => {
-            state.loading = false
-            // FIXME: payload is undefined despite right value being passed in the rest of it
-            // TODO: Dislike counter
-            const tuitNdx = state.tuits
-                .findIndex((t) => t._id === payload._id)
-            state.tuits[tuitNdx] = {
-                ...state.tuits[tuitNdx],
-                ...payload
+        [updateTuitThunk.fulfilled]:
+            (state, {payload}) => {
+            // FIXME: payload is undefined
+            // TODO: dislike counter
+                state.loading = false
+                const tuitNdx = state.tuits
+                    .findIndex((t) => t._id === payload._id)
+                state.tuits[tuitNdx] = {
+                    ...state.tuits[tuitNdx],
+                    ...payload
+                }
             }
-        }
+
     }
 });
 
