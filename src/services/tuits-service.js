@@ -10,10 +10,6 @@ export const createTuit = async (tuit) => {
 }
 
 export const findTuits = async () => {
-
-    console.log(API_BASE)
-    console.log(TUITS_API)
-
     const response = await axios.get(TUITS_API);
     return response.data;
 }
