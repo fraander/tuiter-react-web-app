@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-const SERVER_LINK = process.env.SERVER_LINK
-const API_BASE = process.env.REACT_ENV_API_BASE;
+const SERVER_LINK = process.env.REACT_APP_DB_CONNECTION_STRING
+const API_BASE = process.env.REACT_APP_API_BASE;
 const TUITS_API = `${API_BASE ?? SERVER_LINK}/tuits`;
 
 export const createTuit = async (tuit) => {
@@ -10,6 +10,9 @@ export const createTuit = async (tuit) => {
 }
 
 export const findTuits = async () => {
+    console.log("SERVER_LINK", process.env.REACT_APP_DB_CONNECTION_STRING)
+    console.log("API_BASE", process.env.REACT_APP_API_BASE)
+
     const response = await axios.get(TUITS_API);
     return response.data;
 }

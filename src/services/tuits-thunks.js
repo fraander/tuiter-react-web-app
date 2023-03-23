@@ -17,14 +17,13 @@ export const deleteTuitThunk = createAsyncThunk(
 
 
 const currentUser = {
-    "userName": "NASA",
+    "username": "NASA",
     "handle": "@nasa",
     "image": "nasa.jpg",
 }
 
 const templateTuit = {
     ...currentUser,
-    "topic": "Space",
     "time": "2h",
     "liked": false,
     "disliked": false,
