@@ -10,6 +10,7 @@ export const createTuit = async (tuit) => {
 }
 
 export const findTuits = async () => {
+    console.log("ENV", process.env)
     console.log("SERVER_LINK", process.env.REACT_APP_DB_CONNECTION_STRING)
     console.log("API_BASE", process.env.REACT_APP_API_BASE)
 
